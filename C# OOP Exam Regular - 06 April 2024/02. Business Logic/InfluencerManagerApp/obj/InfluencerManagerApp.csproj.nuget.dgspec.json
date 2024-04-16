@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj",
+        "projectName": "InfluencerManagerApp",
+        "projectPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj",
+        "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Marinov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
