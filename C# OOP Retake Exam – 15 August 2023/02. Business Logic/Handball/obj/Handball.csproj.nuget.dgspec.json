@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marinov\\source\\repos\\C# Exam Preparations - 2024\\01. Structure\\Handball\\Handball.csproj": {}
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 15 August 2023\\02. Business Logic\\Handball\\Handball.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marinov\\source\\repos\\C# Exam Preparations - 2024\\01. Structure\\Handball\\Handball.csproj": {
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 15 August 2023\\02. Business Logic\\Handball\\Handball.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marinov\\source\\repos\\C# Exam Preparations - 2024\\01. Structure\\Handball\\Handball.csproj",
+        "projectUniqueName": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 15 August 2023\\02. Business Logic\\Handball\\Handball.csproj",
         "projectName": "Handball",
-        "projectPath": "C:\\Users\\Marinov\\source\\repos\\C# Exam Preparations - 2024\\01. Structure\\Handball\\Handball.csproj",
+        "projectPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 15 August 2023\\02. Business Logic\\Handball\\Handball.csproj",
         "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marinov\\source\\repos\\C# Exam Preparations - 2024\\01. Structure\\Handball\\obj\\",
+        "outputPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 15 August 2023\\02. Business Logic\\Handball\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marinov\\AppData\\Roaming\\NuGet\\NuGet.Config",
