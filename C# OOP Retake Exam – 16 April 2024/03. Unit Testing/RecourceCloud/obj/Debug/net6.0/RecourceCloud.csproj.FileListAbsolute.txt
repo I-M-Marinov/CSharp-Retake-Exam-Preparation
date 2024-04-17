@@ -1,0 +1,14 @@
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\bin\Debug\net6.0\RecourceCloud.exe
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\bin\Debug\net6.0\RecourceCloud.deps.json
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\bin\Debug\net6.0\RecourceCloud.runtimeconfig.json
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\bin\Debug\net6.0\RecourceCloud.dll
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\bin\Debug\net6.0\RecourceCloud.pdb
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\RecourceCloud.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\RecourceCloud.AssemblyInfoInputs.cache
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\RecourceCloud.AssemblyInfo.cs
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\RecourceCloud.csproj.CoreCompileInputs.cache
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\RecourceCloud.dll
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\refint\RecourceCloud.dll
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\RecourceCloud.pdb
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\RecourceCloud.genruntimeconfig.cache
+C:\Users\Marinov\Desktop\Exam\03. Unit Testing\RecourceCloud\obj\Debug\net6.0\ref\RecourceCloud.dll
