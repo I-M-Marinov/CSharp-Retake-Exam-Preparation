@@ -1,0 +1,14 @@
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\bin\Debug\net6.0\TheContentDepartment.exe
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\bin\Debug\net6.0\TheContentDepartment.deps.json
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\bin\Debug\net6.0\TheContentDepartment.runtimeconfig.json
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\bin\Debug\net6.0\TheContentDepartment.dll
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\bin\Debug\net6.0\TheContentDepartment.pdb
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\TheContentDepartment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\TheContentDepartment.AssemblyInfoInputs.cache
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\TheContentDepartment.AssemblyInfo.cs
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\TheContentDepartment.csproj.CoreCompileInputs.cache
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\TheContentDepartment.dll
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\refint\TheContentDepartment.dll
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\TheContentDepartment.pdb
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\TheContentDepartment.genruntimeconfig.cache
+C:\Users\Marinov\Desktop\Exam\01.Structure\TheContentDepartment\obj\Debug\net6.0\ref\TheContentDepartment.dll
