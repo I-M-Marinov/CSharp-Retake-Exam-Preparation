@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marinov\\Desktop\\Exam\\01.Structure\\TheContentDepartment\\TheContentDepartment.csproj": {}
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 16 April 2024\\02. Business Logic\\TheContentDepartment\\TheContentDepartment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marinov\\Desktop\\Exam\\01.Structure\\TheContentDepartment\\TheContentDepartment.csproj": {
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 16 April 2024\\02. Business Logic\\TheContentDepartment\\TheContentDepartment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marinov\\Desktop\\Exam\\01.Structure\\TheContentDepartment\\TheContentDepartment.csproj",
+        "projectUniqueName": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 16 April 2024\\02. Business Logic\\TheContentDepartment\\TheContentDepartment.csproj",
         "projectName": "TheContentDepartment",
-        "projectPath": "C:\\Users\\Marinov\\Desktop\\Exam\\01.Structure\\TheContentDepartment\\TheContentDepartment.csproj",
+        "projectPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 16 April 2024\\02. Business Logic\\TheContentDepartment\\TheContentDepartment.csproj",
         "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marinov\\Desktop\\Exam\\01.Structure\\TheContentDepartment\\obj\\",
+        "outputPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Retake Exam – 16 April 2024\\02. Business Logic\\TheContentDepartment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marinov\\AppData\\Roaming\\NuGet\\NuGet.Config",

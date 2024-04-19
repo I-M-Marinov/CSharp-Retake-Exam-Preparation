@@ -24,7 +24,7 @@ namespace TheContentDepartment.Models
         public string Name
         {
             get { return name; }
-            protected set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {

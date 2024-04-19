@@ -13,6 +13,7 @@ namespace TheContentDepartment.Models
     {
         private string[] validPaths = { "CSharp", "JavaScript", "Python", "Java" };
         private string path;
+
         public ContentMember(string name, string path) : base(name, path)
         {
             Path = path;
@@ -21,11 +22,11 @@ namespace TheContentDepartment.Models
         public string Path
         {
             get { return path; }
-            set
+            private set
             {
                 if (!validPaths.Any(p => p.ToLower() == value.ToLower()))
                 {
-                    throw new ArgumentException(ExceptionMessages.PathIncorrect, path);
+                    throw new ArgumentException($"{value} path is not valid.");
                 }
 
                 path = value;

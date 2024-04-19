@@ -22,7 +22,7 @@ namespace TheContentDepartment.Models
             {
                 if (value != "Master")
                 {
-                    throw new ArgumentException(ExceptionMessages.PathIncorrect, path);
+                    throw new ArgumentException($"{value} path is not valid.");
                 }
 
                 path = value;

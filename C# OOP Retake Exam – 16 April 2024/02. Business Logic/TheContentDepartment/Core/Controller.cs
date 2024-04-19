@@ -19,6 +19,7 @@ namespace TheContentDepartment.Core
         private IRepository<ITeamMember> teamMembers;
 
         private string[] validMemberTypes = { "TeamLead", "ContentMember"};
+        private string[] validResourceTypes = { "Exam", "Workshop", "Presentation" };
         public Controller()
         {
             resources = new ResourceRepository();
@@ -67,7 +68,7 @@ namespace TheContentDepartment.Core
 
         public string CreateResource(string resourceType, string resourceName, string path)
         {
-            if (resourceType != "Exam" && resourceType != "Workshop" && resourceType != "Presentation")
+            if (!validResourceTypes.Contains(resourceType))
             {
                 return $"{resourceType} type is not handled by Content Department.";
             }
@@ -147,7 +148,10 @@ namespace TheContentDepartment.Core
             member.FinishTask(resourceToBeTested.Name);
             teamLead.WorkOnTask(resourceToBeTested.Name);
 
-            resourceToBeTested.Test();
+            if (!resourceToBeTested.IsTested)
+            {
+                resourceToBeTested.Test();
+            }
 
             return $"{resourceToBeTested.Name} is tested and ready for approval.";
         }
@@ -163,18 +167,20 @@ namespace TheContentDepartment.Core
 
             TeamLead teamLead = FindTeamLead();
 
-            if (isApprovedByTeamLead)
+            if (!isApprovedByTeamLead)
             {
-                resource.Approve();
-                teamLead.FinishTask(resourceName);
-
-                return $"{teamLead.Name} approved {resourceName}.";
-            }
-            else
-            {
-                resource.Test();
+                if (resource.IsTested)
+                {
+                    resource.Test(); // change the IsTested bool back to FALSE ( If it is TRUE )
+                }
                 return $"{teamLead.Name} returned {resourceName} for a re-test.";
             }
+
+            resource.Approve();
+            teamLead.FinishTask(resourceName);
+
+            return $"{teamLead.Name} approved {resourceName}.";
+
         }
 
         public string DepartmentReport()

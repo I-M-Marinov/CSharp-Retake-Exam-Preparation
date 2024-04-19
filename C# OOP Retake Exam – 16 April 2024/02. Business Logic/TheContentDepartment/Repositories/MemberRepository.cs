@@ -26,7 +26,7 @@ namespace TheContentDepartment.Repositories
 
         public ITeamMember TakeOne(string modelName)
         {
-            return models.First(model => model.Name == modelName);
+            return models.FirstOrDefault(model => model.Name == modelName);
         }
     }
 }
