@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj": {}
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\02. Business Logic\\InfluencerManagerApp\\InfluencerManagerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj": {
+    "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\02. Business Logic\\InfluencerManagerApp\\InfluencerManagerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj",
+        "projectUniqueName": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\02. Business Logic\\InfluencerManagerApp\\InfluencerManagerApp.csproj",
         "projectName": "InfluencerManagerApp",
-        "projectPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\InfluencerManagerApp.csproj",
+        "projectPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\02. Business Logic\\InfluencerManagerApp\\InfluencerManagerApp.csproj",
         "packagesPath": "C:\\Users\\Marinov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\01. Structure\\InfluencerManagerApp\\obj\\",
+        "outputPath": "C:\\Users\\Marinov\\source\\repos\\CSharp-Retake-Exam-Preparation\\CSharp-Retake-Exam-Preparation\\C# OOP Exam Regular - 06 April 2024\\02. Business Logic\\InfluencerManagerApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marinov\\AppData\\Roaming\\NuGet\\NuGet.Config",

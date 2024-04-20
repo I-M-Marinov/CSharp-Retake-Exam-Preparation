@@ -19,10 +19,8 @@ namespace InfluencerManagerApp.Repositories
             campaigns = new List<ICampaign>();
         }
 
-        public IReadOnlyCollection<ICampaign> Models
-        {
-            get { return campaigns.AsReadOnly(); }
-        }
+        public IReadOnlyCollection<ICampaign> Models => campaigns.AsReadOnly();
+
         public void AddModel(ICampaign model)
         {
             campaigns.Add(model);

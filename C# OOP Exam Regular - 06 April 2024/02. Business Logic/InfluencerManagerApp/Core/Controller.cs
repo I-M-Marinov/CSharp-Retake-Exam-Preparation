@@ -33,18 +33,18 @@ namespace InfluencerManagerApp.Core
 
             if (influencerType == null)
             {
-                return String.Format(OutputMessages.InfluencerInvalidType, typeName);
+                return string.Format(OutputMessages.InfluencerInvalidType, typeName);
             }
 
             if (influencers.FindByName(username) != null)
             {
-                return String.Format(OutputMessages.UsernameIsRegistered, username, typeof(InfluencerRepository).Name);
+                return string.Format(OutputMessages.UsernameIsRegistered, username, typeof(InfluencerRepository).Name);
             }
 
             var influencer = (IInfluencer)Activator.CreateInstance(influencerType, username, followers);
             influencers.AddModel(influencer);
 
-            return String.Format(OutputMessages.InfluencerRegisteredSuccessfully, username);
+            return string.Format(OutputMessages.InfluencerRegisteredSuccessfully, username);
         }
 
         public string BeginCampaign(string typeName, string brand)
@@ -156,11 +156,8 @@ namespace InfluencerManagerApp.Core
                         influencer.EndParticipation(brand);
                     }
                 }
-
                 campaigns.RemoveModel(campaign);
-
             }
-
             return $"{brand} campaign has reached its target.";
         }
 
@@ -186,7 +183,7 @@ namespace InfluencerManagerApp.Core
         {
             StringBuilder report = new StringBuilder();
 
-            var sortedInfluencers = influencers.Models.ToList()
+            var sortedInfluencers = influencers.Models
                 .OrderByDescending(i => i.Income)
                 .ThenByDescending(i => i.Followers)
                 .ToList();

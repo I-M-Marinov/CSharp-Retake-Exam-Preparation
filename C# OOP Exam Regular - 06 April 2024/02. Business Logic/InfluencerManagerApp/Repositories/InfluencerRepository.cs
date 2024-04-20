@@ -18,10 +18,8 @@ namespace InfluencerManagerApp.Repositories
             influencers = new List<IInfluencer>();
         }
 
-        public IReadOnlyCollection<IInfluencer> Models
-        {
-            get { return influencers.AsReadOnly(); }
-        }
+        public IReadOnlyCollection<IInfluencer> Models => influencers.AsReadOnly();
+
         public void AddModel(IInfluencer model)
         {
             influencers.Add(model);

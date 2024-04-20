@@ -11,6 +11,9 @@ namespace InfluencerManagerApp.Models
 {
     public abstract class Campaign : ICampaign
     {
+        private string brand;
+        private double budget;
+
         protected Campaign(string brand, double budget)
         {
             Brand = brand;
@@ -18,13 +21,11 @@ namespace InfluencerManagerApp.Models
             contributors = new List<string>();
         }
 
-        private string brand;
-        private double budget;
 
         public string Brand
         {
             get { return brand; }
-            private set
+            protected set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
@@ -36,11 +37,8 @@ namespace InfluencerManagerApp.Models
 
         public double Budget
         {
-            get { return budget;}
-            private set
-            {
-                budget = value;
-            }
+            get => budget;
+            private set => budget = value;
         }
 
         private List<string> contributors;

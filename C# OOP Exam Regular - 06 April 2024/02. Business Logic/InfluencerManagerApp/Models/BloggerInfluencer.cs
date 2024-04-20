@@ -14,7 +14,7 @@ namespace InfluencerManagerApp.Models
 
         public override int CalculateCampaignPrice()
         {
-            double result = Followers * 2.0 * 0.2;
+            double result = Followers * EngagementRate * 0.2;
             return (int)Math.Floor(result);
         }
     }

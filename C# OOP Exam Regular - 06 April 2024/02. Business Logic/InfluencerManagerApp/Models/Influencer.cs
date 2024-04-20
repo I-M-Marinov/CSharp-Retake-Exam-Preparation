@@ -48,7 +48,7 @@ namespace InfluencerManagerApp.Models
             get { return followers; }
             private set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentException(ExceptionMessages.FollowersCountNegative);
                 }
@@ -67,7 +67,7 @@ namespace InfluencerManagerApp.Models
         public double Income
         {
             get;
-            private set;
+            protected set;
         }
 
 
