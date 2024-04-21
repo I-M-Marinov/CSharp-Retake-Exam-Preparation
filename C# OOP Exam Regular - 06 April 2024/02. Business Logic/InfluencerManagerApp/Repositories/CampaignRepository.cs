@@ -12,7 +12,7 @@ namespace InfluencerManagerApp.Repositories
     public class CampaignRepository: IRepository<ICampaign>
     {
 
-        private readonly List<ICampaign> campaigns;
+        private List<ICampaign> campaigns;
 
         public CampaignRepository()
         {

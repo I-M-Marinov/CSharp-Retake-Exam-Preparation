@@ -17,9 +17,9 @@ namespace InfluencerManagerApp.Core
     public class Controller: IController
     {
 
-        private IRepository<IInfluencer> influencers;
-        private IRepository<ICampaign> campaigns;
-        private string[] validCampaignTypes = {"ProductCampaign", "ServiceCampaign"};
+        private readonly IRepository<IInfluencer> influencers;
+        private readonly IRepository<ICampaign> campaigns;
+        private readonly string[] validCampaignTypes = {"ProductCampaign", "ServiceCampaign"};
 
 
         public Controller()
@@ -41,7 +41,21 @@ namespace InfluencerManagerApp.Core
                 return string.Format(OutputMessages.UsernameIsRegistered, username, typeof(InfluencerRepository).Name);
             }
 
-            var influencer = (IInfluencer)Activator.CreateInstance(influencerType, username, followers);
+            IInfluencer influencer;
+
+            if (typeName == typeof(BusinessInfluencer).Name)
+            {
+                influencer = new BusinessInfluencer(username, followers);
+            }
+            else if (typeName == typeof(FashionInfluencer).Name)
+            {
+                influencer = new FashionInfluencer(username, followers);
+            }
+            else // (typeName == typeof(BloggerInfluencer).Name)
+            {
+                influencer = new BloggerInfluencer(username, followers);
+            }
+
             influencers.AddModel(influencer);
 
             return string.Format(OutputMessages.InfluencerRegisteredSuccessfully, username);
@@ -60,11 +74,12 @@ namespace InfluencerManagerApp.Core
             }
 
             ICampaign campaign = null;
+
             if (typeName == "ProductCampaign")
             {
                 campaign = new ProductCampaign(brand);
             }
-            else if (typeName == "ServiceCampaign")
+            else // (typeName == "ServiceCampaign") 
             {
                 campaign = new ServiceCampaign(brand);
             }
@@ -100,9 +115,9 @@ namespace InfluencerManagerApp.Core
                 return $"{username} is not eligible for the {brand} campaign.";
             }
 
-            double campaignPrice = influencers.FindByName(username).CalculateCampaignPrice();
+            int campaignPrice = influencer.CalculateCampaignPrice();
 
-            if (campaigns.FindByName(brand).Budget < campaignPrice)
+            if (campaign.Budget < campaignPrice)
             {
                 return $"The budget for {brand} is insufficient to engage {username}.";
             }
@@ -145,25 +160,25 @@ namespace InfluencerManagerApp.Core
                 return $"{brand} campaign cannot be closed as it has not met its financial targets.";
             }
 
-            if (campaign.Budget > 10000)
+            foreach (string contributor in campaign.Contributors)
             {
-                foreach (string contributor in campaign.Contributors)
+                IInfluencer influencer = influencers.FindByName(contributor);
+                var bonus = 2000;
+
+                if (influencer != null)
                 {
-                    IInfluencer influencer = influencers.FindByName(contributor);
-                    if (influencer != null)
-                    {
-                        influencer.EarnFee(2000);
-                        influencer.EndParticipation(brand);
-                    }
+                    influencer.EarnFee(bonus);
+                    influencer.EndParticipation(brand);
                 }
-                campaigns.RemoveModel(campaign);
             }
+            campaigns.RemoveModel(campaign);
             return $"{brand} campaign has reached its target.";
         }
 
         public string ConcludeAppContract(string username)
         {
             IInfluencer influencer = influencers.FindByName(username);
+
             if (influencer == null)
             {
                 return $"{username} has still not signed a contract.";

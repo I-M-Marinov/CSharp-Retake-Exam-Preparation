@@ -9,13 +9,14 @@ namespace InfluencerManagerApp.Models
 {
     public class BusinessInfluencer: Influencer
     {
-        public BusinessInfluencer(string userName, int followers) : base(userName, followers, 3.0)
+        public BusinessInfluencer(string username, int followers) : base(username, followers, 3.0)
         {
         }
 
         public override int CalculateCampaignPrice()
         {
             double result = Followers * EngagementRate * 0.15;
+
             return (int)Math.Floor(result);
         }
     }

@@ -11,7 +11,7 @@ namespace InfluencerManagerApp.Repositories
 {
     public class InfluencerRepository: IRepository<IInfluencer>
     {
-        private readonly List<IInfluencer> influencers;
+        private List<IInfluencer> influencers;
 
         public InfluencerRepository()
         {

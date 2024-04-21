@@ -13,6 +13,8 @@ namespace InfluencerManagerApp.Models
     {
         private string brand;
         private double budget;
+        private readonly List<string> contributors;
+
 
         protected Campaign(string brand, double budget)
         {
@@ -25,7 +27,7 @@ namespace InfluencerManagerApp.Models
         public string Brand
         {
             get { return brand; }
-            protected set
+            private set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
@@ -38,22 +40,24 @@ namespace InfluencerManagerApp.Models
         public double Budget
         {
             get => budget;
-            private set => budget = value;
+            private set
+            {
+                budget = value;
+            }
         }
 
-        private List<string> contributors;
-        public IReadOnlyCollection<string> Contributors =>  contributors.AsReadOnly();
+        public IReadOnlyCollection<string> Contributors =>  contributors;
 
 
         public void Gain(double amount)
         {
-            Budget += amount;
+            budget += amount;
         }
 
         public void Engage(IInfluencer influencer)
         {
             double campaignPrice = influencer.CalculateCampaignPrice();
-            Budget -= campaignPrice;
+            budget -= campaignPrice;
             contributors.Add(influencer.Username);
         }
 
@@ -61,7 +65,7 @@ namespace InfluencerManagerApp.Models
         {
 
             StringBuilder sb = new StringBuilder();
-            sb.Append($"{typeof(Campaign).Name} - Brand: {Brand}, Budget: {Budget}, Contributors: {contributors.Count}");
+            sb.Append($"{typeof(Campaign).Name} - Brand: {Brand}, Budget: {Budget}, Contributors: {Contributors.Count}");
 
             return sb.ToString().Trim();
         }
